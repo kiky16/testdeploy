@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Special Item</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #ffffff;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .navbar-custom {
+        background-color: #212529;
+        border-top: 3px solid #0d6efd;
+      }
+
+      .product-section {
+        flex: 1;
+        padding: 60px 0;
+      }
+
+      .product-image {
+        width: 100%;
+        max-width: 420px;
+        height: 520px;
+        background-color: #e9ecef;
+        color: #8a8a8a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        margin: 0 auto;
+      }
+
+      .sku {
+        font-size: 0.8rem;
+        color: #6c757d;
+        margin-bottom: 8px;
+      }
+
+      .product-title {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .price {
+        font-size: 1.3rem;
+        margin-bottom: 30px;
+      }
+
+      .old-price {
+        text-decoration: line-through;
+        color: #6c757d;
+        margin-right: 8px;
+      }
+
+      .description {
+        color: #444;
+        line-height: 1.8;
+        margin-bottom: 25px;
+      }
+
+      .qty-input {
+        width: 70px;
+      }
+
+      footer {
+        background-color: #212529;
+        color: white;
+        text-align: center;
+        padding: 22px 0;
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 768px) {
+        .product-title {
+          font-size: 2.2rem;
+        }
+
+        .product-image {
+          height: 420px;
+          font-size: 2.2rem;
+          margin-bottom: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">BunnyShop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-4">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="product-section">
+      <div class="container">
+        <div class="row align-items-center g-5 justify-content-center">
+          <div class="col-lg-5 text-center">
+            <div class="product-image">600 x 700</div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="sku">SKU: BST-498</div>
+            <h1 class="product-title">Special item</h1>
+            <div class="price"><span class="old-price">$20.00</span>$18.00</div>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium at dolorem quidem modi. Nam sequi consequatur
+              obcaecati excepturi alias magni, accusamus eius blanditiis
+              delectus ipsam minima ea iste laborum vero?
+            </p>
+
+            <div class="d-flex gap-2 align-items-center">
+              <input
+                type="number"
+                class="form-control qty-input"
+                value="1"
+                min="1"
+              />
+              <button class="btn btn-outline-dark">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>Copyright &copy; Bunny Web 2021</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
